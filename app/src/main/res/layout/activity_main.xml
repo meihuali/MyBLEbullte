@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_connect_state"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="连接状态:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_rcry_connect"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="点击尝试重连"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:background="#660066"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="发烧自动报警系统"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--当前体温-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="当前体温:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_current_temperature"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="37.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--最高体温-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="最高体温:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_max_temperature"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="37.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--最低体温-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="最低体温:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_min_temperature"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:text="37.3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <!--下面的部分-->
+    <TextView
+        android:padding="3dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#0057af"
+        android:background="#ffccff"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:text="@string/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>
